@@ -43,6 +43,7 @@ class RegisterUserActivity : AppCompatActivity() {
                 etPassword.error = "Password does not match"
                 etPassword.requestFocus()
                 return@setOnClickListener
+
             } else {
                 val user = User(fname, lname, username, password)
                 CoroutineScope(Dispatchers.IO).launch {
